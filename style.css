@@ -1,0 +1,30 @@
+#logo {
+    max-height: 50px;
+}
+.top-buffer {
+    margin-top:20px;
+}
+img {
+   
+    max-height: 1700px;
+}
+#map {
+    margin-top: 20px;
+}
+footer {
+    margin-top: 20px;
+}
+.carousel-item img {
+    max-width: 2480px;
+}
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title {
+    font-family: 'Calistoga', cursive;
+}
+.header {
+    font-family: 'Calistoga', cursive;
+    font-family: 'Work Sans', sans-serif;   
+}
