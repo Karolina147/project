@@ -1,16 +1,22 @@
+var lastValue, newFunction, second;
 
-var sekunda = 3;
-var newFunction;
+second = 3;
+previousValue = document.getElementById('odp1').innerHTML;
 
+
+// Użycie operatora przypisania `=` nadpisuje poprzedni stan (wartość). Musisz zapamiętać stan, zanim go usuniesz :)
+
+lastValue = document.getElementById('click1');
 function countDown(answer) {
-    if(sekunda<=0)
-	{ 
-        document.getElementById('click1').innerHTML= 'Oczywiście NIE' ; // jak wpisać oryginalny tekst z HTMLa czyli "NIE"
-        
+    if (second <= 0) {
+        document.getElementById('click1').innerHTML = lastValue;
+	} 
+	if (second == 0) {
+		return previousValue();
 	}
 	else {
-	    sekunda=sekunda-1;
-		document.getElementById('click1').innerHTML = 'Jeszcze chwila na zastanowienie się...' + sekunda +' sek';
-        setTimeout("countDown()",1000)
+		second = second - 1;
+		document.getElementById('click1').innerHTML = 'Jeszcze chwila na zastanowienie się...' + second +' sek';
+		setTimeout(countDown, 1000);
     }
 }
